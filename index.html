@@ -12,10 +12,10 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="min-h-screen flex items-center justify-center bg-white">
+  <body class="min-h-screen flex flex-col items-center justify-center bg-white">
+    <h1 class="text-6xl font-bold">Image Slider</h1>
     <div class="w-full max-w-5xl mx-auto px-4 py-10">
       <div class="relative group rounded-3xl overflow-hidden shadow-2xl">
-        <!-- Slider Track -->
         <div class="aspect-[16/9] bg-gray-200">
           <img
             src="https://images.unsplash.com/photo-1743942439157-2194bd47bd1f?q=80&w=3432&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -23,7 +23,6 @@
           />
         </div>
 
-        <!-- Left Arrow -->
         <button
           class="cursor-pointer left-arrow absolute top-1/2 left-5 -translate-y-1/2 bg-white text-gray-700 p-3 rounded-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-110"
         >
@@ -43,7 +42,6 @@
           </svg>
         </button>
 
-        <!-- Right Arrow -->
         <button
           class="cursor-pointer right-arrow absolute top-1/2 right-5 -translate-y-1/2 bg-white text-gray-700 p-3 rounded-full shadow-lg transition-transform duration-300 ease-in-out hover:scale-110"
         >
@@ -63,7 +61,6 @@
           </svg>
         </button>
 
-        <!-- Pagination -->
         <div
           class="absolute pagination bottom-4 left-1/2 -translate-x-1/2 flex gap-2"
         >
@@ -79,6 +76,12 @@
         </div>
       </div>
     </div>
+
+    <footer class="text-center text-sm text-gray-500 py-6">
+      © 2025 <span class="font-semibold text-gray-700">Shish Frutwala</span>.
+      All rights reserved.
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>
